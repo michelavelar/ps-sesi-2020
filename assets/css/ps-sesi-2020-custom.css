@@ -60,7 +60,7 @@
 /*--------------------------------------------------------------
 # Chamada
 --------------------------------------------------------------*/
-#ps-sesi-chamada {
+#ps-sesi-topo {
   width: 100%;
   height: 60vh;
   background: url("../img/sesi-bg.jpg")  center center;
@@ -71,7 +71,7 @@
   margin-bottom: -120px;
 }
 
-#ps-sesi-chamada:before {
+#ps-sesi-topo:before {
   content: "";
   background: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -81,11 +81,11 @@
   right: 0;
 }
 
-#ps-sesi-chamada .container {
+#ps-sesi-topo .container {
   z-index: 2;
 }
 
-#ps-sesi-chamada h1 {
+#ps-sesi-topo h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -93,13 +93,13 @@
   color: #fff;
 }
 
-#ps-sesi-chamada h2 {
+#ps-sesi-topo h2 {
   color: #eee;
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#ps-sesi-chamada .get-started-icon {
+#ps-sesi-topo .get-started-icon {
   font-size: 24px;
   background: #ff5821;
   padding: 14px;
@@ -110,7 +110,7 @@
   box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#ps-sesi-chamada .btn-get-started {
+#ps-sesi-topo .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -126,18 +126,18 @@
   z-index: 4;
 }
 
-#ps-sesi-chamada .btn-get-started:hover {
+#ps-sesi-topo .btn-get-started:hover {
   background: #ff5821;
 }
 
 @media (min-width: 1024px) {
-  #ps-sesi-chamada {
+  #ps-sesi-topo {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 1024px), (max-height: 768px) {
-  #ps-sesi-chamada {
+  #ps-sesi-topo {
     margin-bottom: -150px;
     height: 80vh;
     /* background: url("../img/sesi-bg.jpg")  center 660px; */
@@ -145,14 +145,14 @@
 }
 
 @media (max-width: 768px) {
-  #ps-sesi-chamada {
+  #ps-sesi-topo {
     height: 80vh;
   }
-  #ps-sesi-chamada h1 {
+  #ps-sesi-topo h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #ps-sesi-chamada h2 {
+  #ps-sesi-topo h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -160,7 +160,7 @@
 }
 
 @media (max-height: 500px) {
-  #ps-sesi-chamada {
+  #ps-sesi-topo {
     height: 100vh;
   }
 }
@@ -270,9 +270,7 @@ section {
 /*--------------------------------------------------------------
 # Servicos
 --------------------------------------------------------------*/
-.ps-sesi-servicos {
-  margin-top: 135px;
-}
+
 .ps-sesi-servicos .icon-box {
   padding: 50px 20px;
   margin-top: 35px;
@@ -521,15 +519,15 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Escolas
 --------------------------------------------------------------*/
-.contact .info-box {
+.ps-sesi-escolas .info-box {
   color: #313030;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px;
 }
 
-.contact .info-box i {
+.ps-sesi-escolas .info-box i {
   font-size: 32px;
   color: #ff5821;
   border-radius: 50%;
@@ -538,14 +536,14 @@ section {
   float: left;
 }
 
-.contact .info-box h3 {
+.ps-sesi-escolas .info-box h3 {
   font-size: 20px;
   color: #656262;
   font-weight: 700;
   margin: 10px 0 10px 68px;
 }
 
-.contact .info-box p {
+.ps-sesi-escolas .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
