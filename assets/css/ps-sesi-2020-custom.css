@@ -15,6 +15,7 @@
 
 #ps-sesi a {
   color: #ff5821;
+  
 }
 
 #ps-sesi a:hover {
@@ -24,6 +25,20 @@
 
 #ps-sesi h1, #ps-sesi h2, #ps-sesi h3, #ps-sesi h4, #ps-sesi h5, #ps-sesi h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.btn-primary-ps-sesi {
+  color: #ffffff !important;
+  background-color: #ff5821;
+  border:2px solid #ff5821;
+  border-radius: 50px;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-primary-ps-sesi:hover {
+  color: #ff5821 !important;
+  background-color: #ffffff;
+  border:2px solid #ff5821;
 }
 
 /*--------------------------------------------------------------
