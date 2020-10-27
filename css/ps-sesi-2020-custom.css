@@ -1,0 +1,607 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+ body#ps-sesi {
+  font-family: "Open Sans", sans-serif;
+  color: #313030;
+}
+
+/* #ps-sesi a {
+  color: #ff5821;
+  
+}
+
+#ps-sesi a:hover {
+  color: #ff7e54;
+  text-decoration: none;
+} */
+
+#ps-sesi h1, #ps-sesi h2, #ps-sesi h3, #ps-sesi h4, #ps-sesi h5, #ps-sesi h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-primary-ps-sesi {
+  color: #ffffff !important;
+  background-color: #ff5821;
+  border:2px solid #ff5821;
+  border-radius: 50px;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-primary-ps-sesi:hover {
+  color: #ff5821 !important;
+  background-color: #ffffff;
+  border:2px solid #ff5821;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.ps-sesi-back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  right: 15px;
+  bottom: 15px;
+  background: #ff5821;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.ps-sesi-back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+}
+
+.ps-sesi-back-to-top:hover {
+  color: #fff;
+  background: #ff774a;
+  transition: background 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# Chamada
+--------------------------------------------------------------*/
+#ps-sesi-topo {
+  width: 100%;
+  height: 60vh;
+  background: url("../assets/img/sesi-bg.jpg")  center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin-bottom: -120px;
+}
+
+#ps-sesi-topo:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#ps-sesi-topo .container {
+  z-index: 2;
+}
+
+#ps-sesi-topo h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#ps-sesi-topo h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#ps-sesi-topo .get-started-icon {
+  font-size: 24px;
+  background: #ff5821;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#ps-sesi-topo .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #584b48;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+}
+
+#ps-sesi-topo .btn-get-started:hover {
+  background: #ff5821;
+}
+
+@media (min-width: 1024px) {
+  #ps-sesi-topo {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1024px), (max-height: 768px) {
+  #ps-sesi-topo {
+    margin-bottom: -150px;
+    height: 80vh;
+    /* background: url("../img/sesi-bg.jpg")  center 660px; */
+  }
+}
+
+@media (max-width: 768px) {
+  #ps-sesi-topo {
+    height: 80vh;
+  }
+  #ps-sesi-topo h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #ps-sesi-topo h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-height: 500px) {
+  #ps-sesi-topo {
+    height: 100vh;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections Geral
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #fff9f7;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  color: #635551;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Chamada
+--------------------------------------------------------------*/
+.ps-sesi-chamada {
+  padding: 0 0 30px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.ps-sesi-chamada .content {
+  padding: 30px;
+  background: #ff5821;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.ps-sesi-chamada .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.ps-sesi-chamada .content p {
+  margin-bottom: 30px;
+}
+
+.ps-sesi-chamada .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.ps-sesi-chamada .content .more-btn i {
+  font-size: 14px;
+}
+
+.ps-sesi-chamada .content .more-btn:hover {
+  color: #ff5821;
+  background: #fff;
+}
+
+.ps-sesi-chamada .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.ps-sesi-chamada .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #ff5821;
+  margin-bottom: 30px;
+}
+
+.ps-sesi-chamada .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.ps-sesi-chamada .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #716f6f;
+}
+
+.ps-sesi-chamada .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.ps-sesi-chamada .btn-inscreva {
+  
+  display: inline-block;
+  padding: 6px 35px 8px 35px;
+  border-radius: 4px;
+  color: #ffffff !important;
+  background: #ff5821 !important;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 7px rgba(255, 88, 33, 0.4);
+  transition: 0.3s;
+}
+
+.ps-sesi-chamada .btn-inscreva:hover {
+  background: #ffffff !important ;
+  color: #ff7e54 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Servicos
+--------------------------------------------------------------*/
+
+.ps-sesi-servicos .icon-box {
+  padding: 50px 20px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+  /* height: 200px; */
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ps-sesi-servicos .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background: #ff5821;
+}
+
+.ps-sesi-servicos .icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.ps-sesi-servicos .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ps-sesi-servicos .title a {
+  color: #343a40;
+}
+
+.ps-sesi-servicos .icon-box:hover .icon {
+  background: #fff;
+  border: 2px solid #ff5821;
+}
+
+.ps-sesi-servicos .icon-box:hover .icon i {
+  color: #ff5821;
+}
+
+.ps-sesi-servicos .icon-box:hover .title a {
+  color: #ff5821;
+}
+
+.ps-sesi-servicos .description {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+# Orientacoes
+--------------------------------------------------------------*/
+
+
+.ps-sesi-orientacoes .icon-box {
+  padding: 50px 20px 0;
+  margin-top: -10px;
+  margin-bottom: 0;
+  text-align: center;
+  /* height: 200px; */
+  position: relative;
+  /* background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+
+.ps-sesi-orientacoes .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background: #ff5821;
+}
+
+.ps-sesi-orientacoes .icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.ps-sesi-orientacoes .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ps-sesi-orientacoes .icon-box:hover .icon {
+  background: #fff;
+  border: 2px solid #ff5821;
+}
+
+.ps-sesi-orientacoes .icon-box:hover .icon i {
+  color: #ff5821;
+}
+
+.ps-sesi-orientacoes .icon-box:hover .title a {
+  color: #ff5821;
+}
+
+.ps-sesi-orientacoes .info-box {
+  color: #313030;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px;
+}
+
+.ps-sesi-orientacoes .info-box i {
+  font-size: 32px;
+  color: #ff5821;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #ffded4;
+  float: left;
+}
+
+.ps-sesi-orientacoes .info-box h3 {
+  font-size: 20px;
+  color: #656262;
+  font-weight: 700;
+  margin: 10px 0 10px 68px;
+}
+
+.ps-sesi-orientacoes .info-box p {
+  padding: 0;
+  line-height: 24px;
+ /*  font-size: 14px; */
+  margin: 0 0 0 68px;
+}
+
+.ps-sesi-orientacoes .nav-tabs .nav-link {
+  font-weight: bold;
+  color: #313030;
+}
+.ps-sesi-orientacoes .nav-tabs .nav-link {
+  border-color: transparent;
+  border-width: 0 0 7px 0; 
+}
+
+.ps-sesi-orientacoes .nav-tabs .nav-link:hover, 
+.ps-sesi-orientacoes .nav-tabs .nav-link.active {
+  color: #ff5821; 
+  border-color:#ff5821;
+  border-width: 0 0 7px 0; 
+}
+
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.ps-sesi-faq .faq-list {
+  padding: 0 100px;
+}
+
+.ps-sesi-faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.ps-sesi-faq .faq-list li + li {
+  margin-top: 15px;
+}
+
+.ps-sesi-faq .faq-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ps-sesi-faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+}
+
+.ps-sesi-faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #ff5821;
+}
+
+.ps-sesi-faq .faq-list .icon-show, .ps-sesi-faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ps-sesi-faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.ps-sesi-faq .faq-list .icon-show {
+  display: none;
+}
+
+.ps-sesi-faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.ps-sesi-faq .faq-list a.collapsed:hover {
+  color: #ff5821;
+}
+
+.ps-sesi-faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.ps-sesi-faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .ps-sesi-faq .faq-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Escolas
+--------------------------------------------------------------*/
+.ps-sesi-escolas .info-box {
+  color: #313030;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px;
+}
+
+.ps-sesi-escolas .info-box i {
+  font-size: 32px;
+  color: #ff5821;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #ffded4;
+  float: left;
+}
+
+.ps-sesi-escolas .info-box h3 {
+  font-size: 20px;
+  color: #656262;
+  font-weight: 700;
+  margin: 10px 0 10px 68px;
+}
+
+.ps-sesi-escolas .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
