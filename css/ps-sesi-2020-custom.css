@@ -151,7 +151,7 @@
 /*--------------------------------------------------------------
 # Sections Geral
 --------------------------------------------------------------*/
-section {
+.ps-sesi-section {
   padding: 60px 0;
   overflow: hidden;
 }
@@ -263,7 +263,6 @@ section {
   color: #ffffff !important;
   background: #ff5821 !important;
   font-size: 14px;
-  font-weight: 400;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -477,6 +476,28 @@ section {
   font-weight: 500;
   padding: 0 30px;
   outline: none;
+  color: #ff5821;
+}
+
+.ps-sesi-faq a.btn-faq {
+  
+  display: inline-block;
+  padding: 5px 10px !important;
+  border-radius: 4px;
+  color: #ffffff !important;
+  background: #ff5821 !important;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: normal;
+  box-shadow: 0 3px 7px rgba(255, 88, 33, 0.4);
+  transition: 0.3s;
+}
+
+.ps-sesi-faq .btn-faq:hover {
+  background: #ffffff !important ;
+  color: #ff7e54 !important;
 }
 
 .ps-sesi-faq .faq-list .icon-help {
