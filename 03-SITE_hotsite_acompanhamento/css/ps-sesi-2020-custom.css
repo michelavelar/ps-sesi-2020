@@ -76,24 +76,31 @@ body#ps-sesi {
   width: 75%;
 }
 
+
+
 @media (min-width: 767px){
   .navbar a.navbar-brand { 
     width: auto;
   }
+  
 }
 
 @media(min-width: 1200px){
   .navbar-nav {
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 600;
   }
+  .navbar .navbar-nav .nav-item { padding-top: 3px}
+   
+
 }
 
 @media(min-width: 1330px){
   .navbar-nav {
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 600;  
   }
+  .navbar .navbar-nav .nav-item { padding-top: 1px}
 }
 
 
